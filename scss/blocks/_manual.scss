@@ -1,0 +1,127 @@
+.manual--boxs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.manual__hr {
+    width: 70%;
+    height: 0px;
+    background-color: #E5ECF4;
+    border: 15px solid #E5ECF4;
+    position: relative;
+    top: 60px;
+    z-index: -2;
+}
+
+.manual--box {
+    width: 27%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+
+    span {
+        margin-top: 40px;
+        margin-bottom: 25px;
+        width: 300px;
+        height: 28px;
+        letter-spacing: -1.07143px;
+        font-size: 24px;
+        color: #495567;
+    }
+
+    p {
+        width: 300px;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+
+
+    }
+}
+
+@media only screen and(max-width:768px) {
+
+    .manual__hr {
+        width: 10px;
+        height: 400px;
+        position: absolute;
+        top: 500px;
+        left: 13%;
+    }
+
+    .manual--boxs {
+        display: block;
+        margin-top: 45px;
+        margin-bottom: 140px;
+        .manual--box {
+            width: 100%;
+            position: relative;
+            height: 150px;
+
+            img {
+                width: 96px;
+                height: 96px;
+            }
+
+            span {
+                width: 40%;
+                position: absolute;
+                top: -35px;
+                left: 130px;
+
+            }
+
+            p {
+                width: 70%;
+                position: absolute;
+                top: 20px;
+                left: 130px;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:375px) {
+
+    .manual__hr {
+        display: none;
+    }
+
+    .manual--boxs {
+        display: block;
+        margin-top: 45px;
+        width: 311px;
+
+        .manual--box {
+            width: 311px;
+            position: relative;
+            height: 270px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 140px;
+
+            img {
+                width: 56px;
+                height: 56px;
+            }
+
+            span {
+                width: 300px;
+                position: relative;
+                top: -0px;
+                left: auto;
+                text-align: center;
+
+            }
+
+            p {
+                width: 300px;
+                position: relative;
+                top: -40px;
+                left: 0;
+                text-align: center;
+            }
+        }
+    }
+}

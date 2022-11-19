@@ -1,0 +1,44 @@
+.call {
+    
+    margin-top: 200px;
+    
+    background-image: url("../img/Mask.png");
+    .call-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        span {margin-top: 100px;
+            margin-bottom: 100px;
+            display: flex;
+            width: 350px;
+            height: 96px;
+            font-size: 48px;
+            line-height: 48px;
+    
+            /* or 100% */
+            letter-spacing: -2.14286px;
+    
+            color: #FFFFFF;
+        }
+        .call--imges{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+    }
+    
+
+}
+@media only screen and(max-width:768px){
+    .call{
+        padding: 0 auto;
+        padding-bottom: 65px;
+        .call-container{
+            justify-content: center;
+            span{
+                text-align: center;
+            }
+        }
+    }   
+}
