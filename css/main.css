@@ -535,7 +535,7 @@ p {
     width: 300px;
   }
   .intro .intro--vector {
-    width: 150px;
+    max-width: 150px;
     position: relative;
     top: -20px;
     -o-object-fit: scale-down;
