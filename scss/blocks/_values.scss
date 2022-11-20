@@ -121,17 +121,17 @@
 
     .value--listsel-box1::before {
         top: 250px;
-        left: 320px;
+        left: 130px;
     }
 
     .value--listsel .value--listsel-box2::before {
         top: 250px;
-        left: 320px;
+        left: 120px;
     }
 
     .value--listsel .value--listsel-box3::before {
         top: 250px;
-        left: 320px;
+    left: 120px;
     }
 
     .container {
@@ -178,4 +178,19 @@
     .value__image {
         margin-left: 0;
     }
+    .value--listsel-box1::before {
+        top: 250px;
+        left: 100px;
+    }
+
+    .value--listsel .value--listsel-box2::before {
+        top: 250px;
+        left: 100px;
+    }
+
+    .value--listsel .value--listsel-box3::before {
+        top: 250px;
+    left: 100px;
+    }
+
 }
