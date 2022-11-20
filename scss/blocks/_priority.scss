@@ -1,131 +1,63 @@
-
-
-.priority {
-    margin-top: 140px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: start;
-    justify-content: space-between;
-
-    .priority--img {
-        width: 445px;
-        height: 445px;
-        position: relative;
-
-        .priority__victor {
-            position: absolute;
-            top: 40%;
-            left: 0;
-            width: 700px;
-        }
-    }
-
-    .priority--text {
-
-        width: 445px;
-        height: 445px;
-        margin: 0 6%;
-
-        span {
-            font-size: 48px;
-            line-height: 48px;
-
-            /* or 100% */
-            letter-spacing: -2.14286px;
-
-            color: #495567;
-
-
-        }
-
-        p {
-            font-size: 15px;
-            line-height: 25px;
-
-            /* or 167% */
-
-            color: #939CAA;
-
-
-        }
-    }
-}
-
-.priority:nth-child(2) {
-    display: flex;
-
-    .priority--img {
-        order: 1;
-        position: relative;
-        left: 0%;
-    }
-
-    .priority--text {
-        order: 2;
-    }
-}
-
-@media only screen and(max-width:768px) {
-    .prioritys {
-        width: 780px;
-    }
-    
-    .priority--img {
-        width: 745px;
-        display: flex;
-        justify-content: right;
-    }
+.prioritys {
 
     .priority {
-        width: 768px;
-    }
-
-    .priority:nth-child(1) {
-        .priority--img {
-            width: 745px;
-            position: relative;
-            left: 17%;
-            order: -1;
-            margin-bottom: 100px;
-            margin: 100 auto;
-        }
-
-        .priority--text {
-            text-align: center;
-        }
-    }
-
-    .priority:nth-child(2) {
         display: flex;
-        align-items: start;
-
-        .priority--img {
-            width: 745px;
-            position: relative;
-            left: -5%;
-            align-items: start;
-            order: -1;
-            margin-bottom: 40px;
-        }
-    }
-
-    .priority:nth-child(3) {
-
-        .priority--img {
-            width: 705px;
-            position: relative;
-            left: 17%;
-            order: -1;
-            margin-bottom: 100px;
-            margin: 100 auto;
-        }
+        flex-wrap: wrap;
+        margin-top: 200px;
 
         .priority--text {
-            text-align: center;
+            width: 445px;
+
+            span {
+                font-size: 48px;
+                line-height: 48px;
+
+                /* or 100% */
+                letter-spacing: -2.14286px;
+
+                color: #495567;
+
+
+            }
+
+            p {
+                font-size: 15px;
+                line-height: 25px;
+
+                /* or 167% */
+
+                color: #939CAA;
+
+
+            }
+        }
+
+        .priority--img {
+            position: relative;
+            position: relative;
+            left: 11.5%;
+            margin-bottom: 100px;
+            .priority__victor {
+                position: absolute;
+                left: 0;
+                top: 200px;
+                width: 200%;
+            }
+        }
+
+        .priority--img:nth-child(1) {
+            position: relative;
+            left: -11.5%;
         }
     }
 }
-@media only screen and(max-width:400px){
+
+@media only screen and(max-width:780px) {
+    .priority--img {
+        order: -2;
+    }
+}
+@media only screen and(max-width:375px){
     .prioritys {
         width: 300px;
     }

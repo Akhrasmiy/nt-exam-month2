@@ -175,6 +175,7 @@ template {
   @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap");
 }
 .container {
+  max-width: 1280px;
   width: 90%;
   margin: 0 auto;
   padding: 0 auto;
@@ -277,12 +278,10 @@ img {
 
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   position: fixed;
   background-color: #fff;
-  width: 100vw;
-  margin: 0 auto;
-  padding: 0 6%;
+  width: 100%;
   opacity: 1;
   z-index: 3;
 }
@@ -296,6 +295,7 @@ header {
   flex-wrap: wrap;
   align-items: center;
   width: 420px;
+  justify-content: space-between;
 }
 
 a {
@@ -315,6 +315,8 @@ a {
   height: 100px;
   flex-wrap: wrap;
   align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .burger {
@@ -326,7 +328,7 @@ p {
   color: aliceblue;
 }
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 400px) {
   .burger {
     display: flex;
   }
@@ -511,7 +513,7 @@ p {
     margin: 30px auto;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
   .about--intro {
     width: 100%;
     height: 200px;
@@ -620,7 +622,7 @@ p {
     left: 130px;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
   .manual__hr {
     display: none;
   }
@@ -657,100 +659,47 @@ p {
     text-align: center;
   }
 }
-.priority {
-  margin-top: 140px;
+.prioritys .priority {
   display: flex;
   flex-wrap: wrap;
-  align-items: start;
-  justify-content: space-between;
+  margin-top: 200px;
 }
-.priority .priority--img {
+.prioritys .priority .priority--text {
   width: 445px;
-  height: 445px;
-  position: relative;
 }
-.priority .priority--img .priority__victor {
-  position: absolute;
-  top: 40%;
-  left: 0;
-  width: 700px;
-}
-.priority .priority--text {
-  width: 445px;
-  height: 445px;
-  margin: 0 6%;
-}
-.priority .priority--text span {
+.prioritys .priority .priority--text span {
   font-size: 48px;
   line-height: 48px;
   /* or 100% */
   letter-spacing: -2.14286px;
   color: #495567;
 }
-.priority .priority--text p {
+.prioritys .priority .priority--text p {
   font-size: 15px;
   line-height: 25px;
   /* or 167% */
   color: #939CAA;
 }
-
-.priority:nth-child(2) {
-  display: flex;
-}
-.priority:nth-child(2) .priority--img {
-  order: 1;
+.prioritys .priority .priority--img {
   position: relative;
-  left: 0%;
+  position: relative;
+  left: 11.5%;
+  margin-bottom: 100px;
 }
-.priority:nth-child(2) .priority--text {
-  order: 2;
+.prioritys .priority .priority--img .priority__victor {
+  position: absolute;
+  left: 0;
+  top: 200px;
+  width: 200%;
+}
+.prioritys .priority .priority--img:nth-child(1) {
+  position: relative;
+  left: -11.5%;
 }
 
-@media only screen and (max-width: 768px) {
-  .prioritys {
-    width: 780px;
-  }
+@media only screen and (max-width: 780px) {
   .priority--img {
-    width: 745px;
-    display: flex;
-    justify-content: right;
-  }
-  .priority {
-    width: 768px;
-  }
-  .priority:nth-child(1) .priority--img {
-    width: 745px;
-    position: relative;
-    left: 17%;
-    order: -1;
-    margin-bottom: 100px;
-    margin: 100 auto;
-  }
-  .priority:nth-child(1) .priority--text {
-    text-align: center;
-  }
-  .priority:nth-child(2) {
-    display: flex;
-    align-items: start;
-  }
-  .priority:nth-child(2) .priority--img {
-    width: 745px;
-    position: relative;
-    left: -5%;
-    align-items: start;
-    order: -1;
-    margin-bottom: 40px;
-  }
-  .priority:nth-child(3) .priority--img {
-    width: 705px;
-    position: relative;
-    left: 17%;
-    order: -1;
-    margin-bottom: 100px;
-    margin: 100 auto;
-  }
-  .priority:nth-child(3) .priority--text {
-    text-align: center;
+    order: -2;
   }
 }
 @media only screen and (max-width: 375px) {
@@ -807,18 +756,17 @@ p {
 footer {
   background-color: #333A44;
   width: 100%;
-  padding: 40px 6%;
 }
 
 .footer--img {
   display: flex;
-  justify-content: right;
-  position: relative;
-  top: -px;
+  justify-content: center;
   gap: 10px;
 }
 
-.footer {
+.footcontainer {
+  padding-top: 40px;
+  padding-bottom: 40px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -826,13 +774,14 @@ footer {
   text-align: center;
 }
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 400px) {
   footer {
     height: 478px;
   }
   footer .footernav {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
   }
   footer .footernav .nav--eliment {
     width: 300px;
@@ -843,7 +792,6 @@ footer {
     margin: 0 auto;
     gap: 10px;
     display: flex;
-    justify-content: center;
   }
 }
 .values {
@@ -887,7 +835,7 @@ footer {
   border-radius: 50%;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
   .values .value .value__images {
     position: relative;
     top: -50px;

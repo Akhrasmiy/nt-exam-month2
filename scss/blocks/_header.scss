@@ -1,11 +1,9 @@
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   position: fixed;
   background-color: #fff;
-  width: 100vw;
-  margin: 0 auto;
-  padding: 0 6%;
+  width: 100%;
   opacity: 1;
   z-index: 3;
 }
@@ -19,6 +17,7 @@ header {
   flex-wrap: wrap;
   align-items: center;
   width: 420px;
+  justify-content: space-between;
 }
 
 a {
@@ -38,7 +37,8 @@ a {
   height: 100px;
   flex-wrap: wrap;
   align-items: center;
-
+max-width: 1280px;
+margin: 0 auto;
 }
 
 .burger {
